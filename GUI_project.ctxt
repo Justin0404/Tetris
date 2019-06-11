@@ -12,4 +12,6 @@ comment5.params=args
 comment5.target=void\ main(java.lang.String[])
 comment6.params=
 comment6.target=void\ run()
-numComments=7
+comment7.params=i
+comment7.target=void\ dropBlock(int)
+numComments=8

@@ -14,17 +14,18 @@ import java.awt.event.MouseWheelListener;
 import javax.swing.border.Border;
 import javax.swing.*;
 import java.util.concurrent.TimeUnit;
-
-
+import java.awt.event.KeyEvent;
+import java.awt.event.KeyListener;
 public class GUI_project extends JFrame {
-
+    
     private JMenuBar menuBar;
     private JButton button1;
     private JComboBox combobox1;
     private JPanel panel2;
     private JTextArea textarea1;
     private JLabel[] blocks = new JLabel[240];
-   
+    private Timer timer;
+ 
 
     //Constructor 
     public GUI_project(){
@@ -39,7 +40,11 @@ public class GUI_project extends JFrame {
         JPanel contentPane = new JPanel(null);
         contentPane.setPreferredSize(new Dimension(600,800));
         contentPane.setBackground(new Color(192,192,192));
-
+        
+        KeyListener listener = new KeyListener();
+        public void keyPressed(KeyEvent evt);
+            
+        
 
         button1 = new JButton();
         button1.setBounds(419,495,150,35);
@@ -90,7 +95,7 @@ public class GUI_project extends JFrame {
             for(int j = 0; j < 10; j++){
                 blocks[10*i + j] = new JLabel();
                 blocks[10*i + j].setBounds(30*j,30*i,30,30);
-                blocks[10*i + j].setBackground(new Color(0,0,0));
+                blocks[10*i + j].setBackground(new Color(0,255,0));
                 blocks[10*i + j].setForeground(new Color(0,0,0));
                 blocks[10*i + j].setEnabled(true);
                 blocks[10*i + j].setFont(new Font("sansserif",0,12));
@@ -150,9 +155,21 @@ public class GUI_project extends JFrame {
               }
           }
         for(int i = 0; i < 24; i++){
-            for(int j = 0; j < 10; j++){
-                
-                blocks[10*i + j].setBackground(new Color(255,0,0));
+          dropBlock(i);
+           try{
+                Thread.sleep(10);
+            }
+                catch(InterruptedException ex){
+                    
+            }
+         
+         this.repaint();
+        }
+        /*for(int i = 0; i < 24; i++){
+           // for(int j = 0; j < 10; j++){
+                dropBlock(i);
+              
+                //blocks[10*i + j].setBackground(new Color(255,0,0));
                 /*try{
                 TimeUnit.SECONDS.sleep(2);
             }
@@ -165,20 +182,21 @@ public class GUI_project extends JFrame {
                 catch(InterruptedException ex){
                    blocks[10*i + j].interrupt();
                 }
-           */   }
+           */   
               
-           try{
+           /*try{
            Thread.sleep(10);
              }
            catch(InterruptedException ex){
                Thread.currentThread().interrupt();
-              }
-             for(int j = 0; j < 10; j++){
+              } */
+          //  }
+             /*for(int j = 0; j < 10; j++){
                blocks[10*i + j].setForeground(new Color(0,0,0));
-            }
-          }
+            }*/
+          
        }
-
+    
 
      public static void main(String[] args){
         System.setProperty("swing.defaultlaf", "com.sun.java.swing.plaf.nimbus.NimbusLookAndFeel");
@@ -188,5 +206,28 @@ public class GUI_project extends JFrame {
             }
         });
     }
-
+   public void dropBlock(int i){
+       for(int j = 0; j < 10; j++){
+           
+           blocks[10*i + j].setBackground(new Color(255,0,0));
+          
+           /*if(i != 0){
+               blocks[10 * i + j - 10].setBackground(new Color(0,0,0));
+            }
+              */
+        }
+      /*  try{
+                Thread.sleep(100);
+            }
+                catch(InterruptedException ex){
+                    
+            }
+        
+       /*try{
+              Thread.sleep(100);
+        }
+        catch(InterruptedException ex){
+             Thread.currentThread().interrupt();
+          }*/
+    }
 }
