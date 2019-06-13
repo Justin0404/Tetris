@@ -1,0 +1,24 @@
+#BlueJ class context
+comment0.target=TetrisWorld
+comment0.text=\r\n\ The\ world\ of\ tetris\r\n\ \r\n\ @author\ Dietrich\ Boles\ (University\ of\ Oldenburg,\ Germany)\r\n\ @version\ 1.0\ (15.02.2007)\r\n\ \r\n
+comment1.params=
+comment1.target=TetrisWorld()
+comment1.text=\r\n\ Creates\ a\ tetris\ world\ with\ 10\ columns\ and\ 22\ rows\r\n
+comment2.params=cols\ rows
+comment2.target=TetrisWorld(int,\ int)
+comment2.text=\r\n\ Creates\ a\ tetris\ world\ with\ "cols"\ columns\ and\ "rows"\ rows\r\n\ \r\n\ @param\ cols\r\n\ \ \ \ \ \ \ \ \ \ \ \ number\ of\ columns\ (>\=\ 9)\r\n\ @param\ rows\r\n\ \ \ \ \ \ \ \ \ \ \ \ number\ of\ rows\ (>\=\ 10)\r\n
+comment3.params=
+comment3.target=TetrisWorld\ getWorld()
+comment4.params=
+comment4.target=Tetromino\ getCurrentTetromino()
+comment5.params=t
+comment5.target=void\ setCurrentTetromino(Tetromino)
+comment6.params=
+comment6.target=Tetromino\ genTetromino()
+comment7.params=rows
+comment7.target=void\ newPoints(int)
+comment8.params=
+comment8.target=int\ getPoints()
+comment9.params=
+comment9.target=void\ gameOver()
+numComments=10
