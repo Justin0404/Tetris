@@ -1,6 +1,5 @@
 #BlueJ class context
 comment0.target=TetrisWorld
-comment0.text=\r\n\ The\ world\ of\ tetris\r\n\ \r\n\ @author\ Dietrich\ Boles\ (University\ of\ Oldenburg,\ Germany)\r\n\ @version\ 1.0\ (15.02.2007)\r\n\ \r\n
 comment1.params=
 comment1.target=TetrisWorld()
 comment1.text=\r\n\ Creates\ a\ tetris\ world\ with\ 10\ columns\ and\ 22\ rows\r\n

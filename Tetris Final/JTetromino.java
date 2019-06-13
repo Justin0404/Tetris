@@ -9,7 +9,7 @@ import greenfoot.*; // (World, Actor, GreenfootImage, and Greenfoot)
  */
 public class JTetromino extends Tetromino {
 	JTetromino() {
-		super("yellow");
+		super("orange");
 	}
 
 	protected void addedToWorld(World world) {

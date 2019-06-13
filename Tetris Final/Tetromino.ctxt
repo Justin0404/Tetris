@@ -1,6 +1,5 @@
 #BlueJ class context
 comment0.target=Tetromino
-comment0.text=\r\n\ abstract\ super\ class\ of\ all\ tetrominos;\ contains\ the\ act-method\r\n\ \r\n\ @author\ Dietrich\ Boles\ (University\ of\ Oldenburg,\ Germany)\r\n\ @version\ 1.0\ (30.10.2008)\r\n\ \r\n
 comment1.params=color
 comment1.target=Tetromino(java.lang.String)
 comment10.params=
