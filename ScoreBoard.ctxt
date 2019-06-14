@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=ScoreBoard
+comment1.params=score
+comment1.target=ScoreBoard(int)
+comment2.params=world
+comment2.target=void\ addedToWorld(greenfoot.World)
+comment3.params=title\ prefix\ score
+comment3.target=void\ makeImage(java.lang.String,\ java.lang.String,\ int)
+numComments=4
