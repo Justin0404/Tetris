@@ -1,10 +1,4 @@
-/**
- * Represents the view of attained points
- * 
- * @author Dietrich Boles (University of Oldenburg, Germany)
- * @version 1.0 (30.10.2008)
- * 
- */
+
 public class Points {
 
 	private int points;

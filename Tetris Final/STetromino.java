@@ -1,20 +1,13 @@
-import greenfoot.*; // (World, Actor, GreenfootImage, and Greenfoot)
+import greenfoot.*; 
 
-/**
- * represents a S tetromino
- * 
- * @author Dietrich Boles (University of Oldenburg, Germany)
- * @version 1.0 (30.10.2008)
- * 
- */
 public class STetromino extends Tetromino {
 	STetromino() {
 		super("green");
 	}
 
 	protected void addedToWorld(World world) {
-		direction = genDirection();
-		int start = genStartX();
+		direction = 2;
+		int start = 4;
 		getWorld().addObject(b[0], start, 1);
 		getWorld().addObject(b[1], start + 1, 1);
 		getWorld().addObject(b[2], start + 1, 0);
@@ -70,8 +63,6 @@ public class STetromino extends Tetromino {
 		}
 	}
 
-	protected int genStartX() {
-		return (int) (Math.random() * (TetrisWorld.getWorld().getWidth() - 2));
-	}
+	
 
 }

@@ -1,6 +1,5 @@
 #BlueJ class context
 comment0.target=JTetromino
-comment0.text=\r\n\ represents\ a\ J\ tetromino\r\n\ \r\n\ @author\ Dietrich\ Boles\ (University\ of\ Oldenburg,\ Germany)\r\n\ @version\ 1.0\ (30.10.2008)\r\n\ \r\n
 comment1.params=
 comment1.target=JTetromino()
 comment2.params=world
@@ -13,6 +12,4 @@ comment5.params=
 comment5.target=Block\ rightMost()
 comment6.params=
 comment6.target=boolean\ turnPossible()
-comment7.params=
-comment7.target=int\ genStartX()
-numComments=8
+numComments=7

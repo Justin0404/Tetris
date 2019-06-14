@@ -1,4 +1,4 @@
-import greenfoot.*; // (World, Actor, GreenfootImage, and Greenfoot)
+import greenfoot.*; 
 import java.awt.Color;
 
 public class TetrisWorld extends World {
@@ -13,21 +13,12 @@ public class TetrisWorld extends World {
     
     private int speed;
 
-    /**
-     * Creates a tetris world with 10 columns and 22 rows
-     */
+    
     public TetrisWorld() {
         this(10, 24);
     }
 
-    /**
-     * Creates a tetris world with "cols" columns and "rows" rows
-     * 
-     * @param cols
-     *            number of columns (>= 9)
-     * @param rows
-     *            number of rows (>= 10)
-     */
+    
     public TetrisWorld(int cols, int rows) {
         super(cols < 9 ? 9 : cols, (rows < 10 ? 10 : rows) + 2, 20);
 
@@ -98,16 +89,16 @@ public class TetrisWorld extends World {
         int p = 0;
         switch (rows) {
         case 1:
-            p = 40;
+            p = 1;
             break;
         case 2:
-            p = 100;
+            p = 2;
             break;
         case 3:
-            p = 300;
+            p = 3;
             break;
         case 4:
-            p = 1200;
+            p = 4;
             break;
         }
         pointView.add(p);

@@ -1,35 +1,24 @@
-import greenfoot.*;  // (World, Actor, GreenfootImage, and Greenfoot)
-
+import greenfoot.*; 
 import java.util.Calendar;
 
-/**
- * The ScoreBoard is used to display results on the screen. It can display some
- * text and several numbers.
- * 
- * @author M Kolling (modified by Dietrich Boles)
- * @version 1.0
- */
+
 public class ScoreBoard extends Actor
 {
     public static final float FONT_SIZE = 24.0f;
     
     private int score;
 
-    /**
-     * Create a score board for the final result.
-     */
+   
     public ScoreBoard(int score)
     {
         this.score = score;
     }
     
     protected void addedToWorld(World world) {
-        makeImage("Game Over", "Score: ", score);
+        makeImage("Game Over", "Lines: ", score);
     }
 
-    /**
-     * Make the score board image.
-     */
+    
     private void makeImage(String title, String prefix, int score)
     {
         int WIDTH = (getWorld().getWidth()+2) * getWorld().getCellSize();

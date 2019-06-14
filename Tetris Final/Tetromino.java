@@ -1,5 +1,4 @@
-import greenfoot.*; // (World, Actor, GreenfootImage, and Greenfoot)
-
+import greenfoot.*; 
 
 public abstract class Tetromino extends Actor {
 
@@ -99,12 +98,12 @@ public abstract class Tetromino extends Actor {
             return;
         }
 
-        // one row down
+        //down
         oneDown();
         counter = 0;
     }
 
-    // one column to the left
+    //left
     boolean left() {
         if (leftOccupied())
             return false;
@@ -149,7 +148,7 @@ public abstract class Tetromino extends Actor {
         return true;
     }
 
-    // right shif possible?
+    // right shift possible?
     boolean rightOccupied() {
         if (rightMost().getX() == TetrisWorld.getWorld().getWidth() - 1) {
             return true;
@@ -174,7 +173,7 @@ public abstract class Tetromino extends Actor {
         return false;
     }
 
-    // change the direction of the tetromino
+    // change the direction of the block
     boolean turnLeft() {
         if (!turnPossible()) {
             return false;
@@ -195,7 +194,7 @@ public abstract class Tetromino extends Actor {
         return true;
     }
 
-    // tetromino slides one row down
+    //slides one row down
     boolean oneDown() {
         // checks whether the tetromino is on the bottom row
         for (int i = 0; i < 4; i++) {
@@ -310,10 +309,6 @@ public abstract class Tetromino extends Actor {
         return false;
     }
 
-    // generates a direction randomly
-    int genDirection() {
-        return (int) (Math.random() * 4);
-    }
 
     // return the number of digits of a number
     int length(int number) {

@@ -2,10 +2,8 @@
 comment0.target=TetrisWorld
 comment1.params=
 comment1.target=TetrisWorld()
-comment1.text=\r\n\ Creates\ a\ tetris\ world\ with\ 10\ columns\ and\ 22\ rows\r\n
 comment2.params=cols\ rows
 comment2.target=TetrisWorld(int,\ int)
-comment2.text=\r\n\ Creates\ a\ tetris\ world\ with\ "cols"\ columns\ and\ "rows"\ rows\r\n\ \r\n\ @param\ cols\r\n\ \ \ \ \ \ \ \ \ \ \ \ number\ of\ columns\ (>\=\ 9)\r\n\ @param\ rows\r\n\ \ \ \ \ \ \ \ \ \ \ \ number\ of\ rows\ (>\=\ 10)\r\n
 comment3.params=
 comment3.target=TetrisWorld\ getWorld()
 comment4.params=

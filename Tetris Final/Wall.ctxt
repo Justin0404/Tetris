@@ -1,6 +1,5 @@
 #BlueJ class context
 comment0.target=Wall
-comment0.text=\r\n\ Represents\ a\ wall\ separating\ the\ tetris\ world\ from\ the\ point\ view\r\n\ \r\n\ @author\ Dietrich\ Boles\ (University\ of\ Oldenburg,\ Germany)\r\n\ @version\ 1.0\ (30.10.2008)\r\n\ \r\n
 comment1.params=
 comment1.target=Wall()
 numComments=2

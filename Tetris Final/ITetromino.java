@@ -1,20 +1,13 @@
-import greenfoot.*; // (World, Actor, GreenfootImage, and Greenfoot)
+import greenfoot.*; 
 
-/**
- * represents a I tetromino
- * 
- * @author Dietrich Boles (University of Oldenburg, Germany)
- * @version 1.0 (30.10.2008)
- * 
- */
 public class ITetromino extends Tetromino {
 	ITetromino() {
 		super("brown");
 	}
 
 	protected void addedToWorld(World world) {
-		direction = genDirection();
-		int start = genStartX();
+		direction = 1;
+		int start = 3;
 		for (int i = 0; i < 4; i++) {
 			getWorld().addObject(b[i], start + i, 2);
 		}
@@ -62,8 +55,6 @@ public class ITetromino extends Tetromino {
 		}
 	}
 
-	protected int genStartX() {
-		return (int) (Math.random() * (TetrisWorld.getWorld().getWidth() - 3));
-	}
+	
 
 }

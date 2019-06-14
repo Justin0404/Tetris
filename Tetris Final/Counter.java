@@ -1,15 +1,8 @@
-import greenfoot.*;  // (World, Actor, GreenfootImage, and Greenfoot)
-
-
+import greenfoot.*;  
 import java.awt.Graphics;
 
 
-/**
- * Counter that displays a number with a text prefix.
- * 
- * @author Michael Kolling (modified by Dietrich Boles)
- * @version 1.0.2
- */
+
 public class Counter extends Actor
 {
     private static final Color textColor = new Color(0, 0, 0);
@@ -54,9 +47,7 @@ public class Counter extends Actor
         return value;
     }
 
-    /**
-     * Make the image
-     */
+    
     private void updateImage()
     {
         GreenfootImage image = getImage();
