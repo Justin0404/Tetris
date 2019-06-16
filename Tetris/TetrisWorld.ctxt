@@ -1,0 +1,21 @@
+#BlueJ class context
+comment0.target=TetrisWorld
+comment1.params=
+comment1.target=TetrisWorld()
+comment2.params=cols\ rows
+comment2.target=TetrisWorld(int,\ int)
+comment3.params=
+comment3.target=TetrisWorld\ getWorld()
+comment4.params=
+comment4.target=Tetromino\ getCurrentTetromino()
+comment5.params=t
+comment5.target=void\ setCurrentTetromino(Tetromino)
+comment6.params=
+comment6.target=Tetromino\ genTetromino()
+comment7.params=rows
+comment7.target=void\ newPoints(int)
+comment8.params=
+comment8.target=int\ getPoints()
+comment9.params=
+comment9.target=void\ gameOver()
+numComments=10

@@ -1,0 +1,15 @@
+#BlueJ class context
+comment0.target=OTetromino
+comment1.params=
+comment1.target=OTetromino()
+comment2.params=world
+comment2.target=void\ addedToWorld(greenfoot.World)
+comment3.params=
+comment3.target=void\ setDirection()
+comment4.params=
+comment4.target=boolean\ turnPossible()
+comment5.params=
+comment5.target=Block\ leftMost()
+comment6.params=
+comment6.target=Block\ rightMost()
+numComments=7
