@@ -14,7 +14,7 @@ public class OTetromino extends Tetromino {
 		getWorld().addObject(b[3], start + 1, 1);
 	}
 
-	protected void setDirection() {
+	protected void setDirection() {//Doens't need to change based on direction
 	}
 
 	protected boolean turnPossible() {

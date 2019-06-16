@@ -2,14 +2,14 @@ import greenfoot.*;
 
 public class ITetromino extends Tetromino {
 	ITetromino() {
-		super("brown");
+		super("brown"); //Sets color
 	}
 
 	protected void addedToWorld(World world) {
 		direction = 1;
 		int start = 3;
 		for (int i = 0; i < 4; i++) {
-			getWorld().addObject(b[i], start + i, 2);
+			getWorld().addObject(b[i], start + i, 2); //Adds the block in the appropriate direction
 		}
 		setDirection();
 	}
@@ -17,7 +17,7 @@ public class ITetromino extends Tetromino {
 	protected void setDirection() {
 		switch (direction) {
 		case NORTH:
-		case SOUTH:
+		case SOUTH: //if it is facing down, then change the location except for b[1]
 			for (int i = 0; i < 4; i++) {
 				if (i == 1)
 					continue;
@@ -26,7 +26,7 @@ public class ITetromino extends Tetromino {
 			break;
 
 		case WEST:
-		case EAST:
+		case EAST: //if it is facing left, then change location except for b[1]
 			for (int i = 0; i < 4; i++) {
 				if (i == 1)
 					continue;
@@ -47,10 +47,10 @@ public class ITetromino extends Tetromino {
 	protected boolean turnPossible() {
 		switch (direction) {
 		case NORTH:
-		case SOUTH:
+		case SOUTH: //formula if it is facing down 
 			return b[0].getX() >= 1
 					&& b[3].getX() <= TetrisWorld.getWorld().getWidth() - 3;
-		default: // EAST, WEST
+		default: // formula if it is facing right or left
 			return b[0].getY() < TetrisWorld.getWorld().getHeight() - 3;
 		}
 	}

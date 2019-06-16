@@ -16,7 +16,7 @@ public class ZTetromino extends Tetromino {
 	}
 
 	protected void setDirection() {
-		switch (direction) {
+		switch (direction) {//Changes the block based on the direction
 		case NORTH:
 		case SOUTH:
 			b[0].setLocation(b[1].getX() - 1, b[1].getY());

@@ -15,7 +15,7 @@ public class JTetromino extends Tetromino {
 		setDirection();
 	}
 
-	protected void setDirection() {
+	protected void setDirection() {//Changes the block based on the direction
 		switch (direction) {
 		case NORTH:
 			b[0].setLocation(b[2].getX() - 1, b[2].getY() + 1);
